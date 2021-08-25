@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <title>Masak apa hari ini ? | Masak apapun jadi Fun</title>
+  </head>
+  <body>
+    <navbar-menu></navbar-menu>
+    <main-jumbotron></main-jumbotron>
+
+    <main class="container">
+      <section class="px-5 category-container mb-5">
+        <div class="row">
+          <div class="col">
+            <h5>Pencarian Trending :</h5>
+            <a href="javascript:void(0)" id="clear-filter">
+              <span class="badge bg-danger">Clear Filter</span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <category-container></category-container>
+        </div>
+      </section>
+
+      <section class="px-5 mb-5">
+        <search-bar></search-bar>
+      </section>
+
+      <section class="px-4">
+        <receipe-list></receipe-list>
+        <div
+          id="spinner"
+          class="
+            d-flex
+            flex-column
+            justify-content-center
+            text-center
+            loading-inactive
+          "
+        >
+          <div class="spinner-border align-self-center" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <strong>Loading...</strong>
+        </div>
+        <loading-page></loading-page>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <receipe-detail></receipe-detail>
+    <footer-web></footer-web>
+  </body>
+</html>
