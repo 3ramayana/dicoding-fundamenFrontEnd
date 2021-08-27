@@ -106,7 +106,6 @@ const main = () => {
     await displayCategory();
     await getResep();
     loadingActive();
-    // console.log(getResepKey);
   };
   onLoad();
 

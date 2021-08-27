@@ -1,5 +1,5 @@
 body {
-  font-family: "opensans";
+  font-family: "opensans", sans-serif;
   position: relative;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .jumbotron h2 {
-  font-family: "trashhand";
+  font-family: "trashhand", sans-serif;
   font-size: 3rem;
   color: #2d2424;
 }
@@ -55,8 +55,7 @@ body {
 @media (max-width: 567px) {
   .jumbotron img {
     width: 200px;
-    /* top: -60px; */
-    /* left: 0; */
+    z-index: -1;
   }
 
   .jumbotron h2 {
@@ -68,6 +67,7 @@ body {
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding: 3rem !important;
+    z-index: -2;
   }
 }
 
@@ -136,16 +136,16 @@ body {
 
 .modal .card-header {
   font-size: 1.3rem;
-  font-family: "trashhand";
+  font-family: "trashhand", sans-serif;
 }
 
 .modal .step {
-  font-family: "trashhand";
+  font-family: "trashhand", sans-serif;
   font-size: 2rem;
 }
 
 .info-resep .title {
-  font-family: "trashhand";
+  font-family: "trashhand", sans-serif;
   font-size: 2rem;
 }
 
